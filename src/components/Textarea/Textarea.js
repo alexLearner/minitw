@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import './Textarea.css';
 
-import './TextArea.css';
-
-class TextArea extends PureComponent {
+class Textarea extends PureComponent {
   state = { value: this.props.value };
 
   onKeyPress = event => {
@@ -40,6 +39,7 @@ class TextArea extends PureComponent {
         autoFocus,
         defaultValue,
         placeholder,
+        className = "",
       } = this.props,
       { value } = this.state;
 
@@ -50,7 +50,7 @@ class TextArea extends PureComponent {
         defaultValue={defaultValue}
         placeholder={placeholder}
         onInput={this.change}
-        className="textarea"
+        className={`textarea ${className}`}
         autoFocus={autoFocus}
         onKeyPress={this.onKeyPress}
       />
@@ -58,13 +58,14 @@ class TextArea extends PureComponent {
   }
 }
 
-TextArea.propTypes = {
+Textarea.propTypes = {
   onChange: PropTypes.func,
   onEnter: PropTypes.func,
   value: PropTypes.string,
   defaultValue: PropTypes.string,
   placeholder: PropTypes.string,
   autoFocus: PropTypes.bool,
+  className: PropTypes.string,
 };
 
-export default TextArea;
+export default Textarea;

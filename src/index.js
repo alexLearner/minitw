@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import configureStore from "./store/configureStore";
-import './antd.css';
 import './index.css';
+import './antd.css';
 import Router from './routes';
 
 const initialState = {};

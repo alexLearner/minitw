@@ -1,0 +1,15 @@
+.userpage {
+  display: flex;
+  flex-direction: column;
+
+  &_header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 24px;
+  }
+
+  &_avatar {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,14 @@
+.avatar {
+  display: block;
+
+  &.small {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.circle {
+    border-radius: 100%;
+    border: 1px solid #ccc;
+  }
+}
+

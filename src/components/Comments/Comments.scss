@@ -1,0 +1,46 @@
+.comments {
+  padding: 6px 0;
+
+  &_item {
+    border-bottom: 1px solid #ccc;
+    padding: 6px 12px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_body {
+      display: flex;
+      align-items: center;
+    }
+
+    &_content {
+      margin-left: 12px;
+      font-size: .85em;
+    }
+
+    &_name {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    &_created {
+      font-size: .7em;
+      text-align: right;
+      color: gray;
+    }
+  }
+
+  &_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px 0;
+    margin-top: 12px;
+
+    &_textarea {
+      flex: 1;
+      margin-right: 12px;
+    }
+  }
+}
