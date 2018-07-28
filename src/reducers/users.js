@@ -1,4 +1,4 @@
-export default function user(state = {}, action) {
+export default function news(state = {}, action) {
   switch (action.type) {
     default:
       return state;
