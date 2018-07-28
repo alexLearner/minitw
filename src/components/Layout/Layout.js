@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { getUsers } from "../../actions/users";
+import Header from "../Header";
 import "./Layout.css";
 
 class Layout extends Component {
@@ -19,6 +20,7 @@ class Layout extends Component {
 
     return (
       <div className="layout">
+        <Header />
         <div className="container layout_content">
           { children }
         </div>
