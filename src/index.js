@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './routes';
 import { Provider } from 'react-redux'
 import configureStore from "./store/configureStore";
-import './index.scss';
+import './antd.css';
+import './index.css';
+import Router from './routes';
 
 const initialState = {};
 const store = configureStore(initialState);

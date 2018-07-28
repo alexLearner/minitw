@@ -11,6 +11,8 @@ class Layout extends Component {
     const { isFetched, getUsers } = this.props;
 
     if (!isFetched) {
+      // users data is required for correct work app
+      // so load it in the Layout;
       getUsers()
     }
   }
