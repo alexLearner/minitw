@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Avatar from "../Avatar";
 
-const Comment = ({ user, content, created }) => (
+const Comment = ({ user, content }) => (
   <div className="comments_item">
     <div className="comments_item_body">
       <Avatar
@@ -18,19 +18,19 @@ const Comment = ({ user, content, created }) => (
       </div>
     </div>
 
-    <div className="comments_item_created">
-      { created }
-    </div>
+    {/*<div className="comments_item_created">*/}
+      {/*{ (new Date(created)).toDateString() }*/}
+    {/*</div>*/}
   </div>
 );
 
 Comment.propTypes = {
   user: PropTypes.object,
   content: PropTypes.string,
-  created: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
+  // created: PropTypes.oneOfType([
+  //   PropTypes.string,
+  //   PropTypes.number,
+  // ]),
 };
 
 export default Comment;

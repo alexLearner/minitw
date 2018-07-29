@@ -269,19 +269,7 @@
       "id": 2,
       "title": "Title",
       "content": "<b>Body<b><br>test test",
-      "comments": [
-        {
-          "id": 1,
-          "user": {
-            "id":1,
-            "name":"George",
-            "last_name":"Bluth",
-            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
-          },
-          "created": 1,
-          "content": "ha ha!"
-        }
-      ]
+      "comments": []
     },
     {
       "id": 3,

@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import Posts from "../../components/Posts/Posts";
 import "./User.css";
 import { getPosts } from "../../actions/posts";
+import Avatar from "../../components/Avatar";
 
 class User extends Component {
   componentDidMount() {
@@ -32,14 +33,14 @@ class User extends Component {
 
     if (!user) {
       return (
-        <div className="userpage"></div>
+        <div className="userpage" />
       )
     }
 
     return (
       <div className="userpage">
         <div className="userpage_header">
-          <img className="userpage_avatar" src={avatar} />
+          <Avatar image={avatar} className="userpage_avatar" />
 
           <div>
             <h2>{name}</h2>

@@ -6,20 +6,23 @@ import "./Avatar.css"
 const DEFAULT_AVATAR = "https://cdn.dribbble.com/users/264/screenshots/1035073/untitled-2.jpg";
 
 const Avatar = ({ image, alt = "", theme, size, className }) => (
-  <img src={image || DEFAULT_AVATAR} alt={alt} className={cx("avatar", size, theme, className)} />
+  <img
+    src={image || DEFAULT_AVATAR}
+    alt={alt}
+    className={cx("avatar", size, theme, className)}
+  />
 );
 
 Avatar.defaultProps = {
-  theme: "",
-  size: "",
+  image: ""
 };
 
 Avatar.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   alt: PropTypes.string,
   className: PropTypes.string,
   size: PropTypes.oneOf([
-    "small"
+    "small",
   ]),
   theme: PropTypes.oneOf([
     "circle"

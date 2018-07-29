@@ -1,9 +1,12 @@
 import * as c from "../constants";
+import localStore from "../modules/localStore";
 
 const
+  storageUser = localStore.get("user"),
+
   initialState = {
-    isAuth: false,
-    name: "",
+    isAuth: !!storageUser,
+    name: storageUser && storageUser.name,
   };
 
 export default function user(state = initialState, action) {

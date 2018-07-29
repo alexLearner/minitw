@@ -31,7 +31,7 @@ const Header = ({ open, isAuth, name, out }) => (
               Sign in
             </span>
           ) : [
-              <span className="header_name">{name}</span>,
+              <span className="header_name" key="1">{name}</span>,
               <span
                 className="header_nav_item"
                 onClick={() => out()}

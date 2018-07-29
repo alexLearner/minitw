@@ -21,7 +21,6 @@ const Users = ({ data, removeUser }) => {
         data.map(user => (
           <User
             key={user.id}
-            removeUser={removeUser}
             {...user}
           />
         ))

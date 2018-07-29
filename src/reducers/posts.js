@@ -1,9 +1,13 @@
 import * as c from "../constants";
 
+import localStore from "../modules/localStore";
+
 const
+  storagePosts = localStore.get("posts"),
+
   initialState = {
-    isFetched: false,
-    data: null,
+    isFetched: !!storagePosts,
+    data: storagePosts,
   };
 
 export default function posts(state = initialState, action) {
