@@ -5,8 +5,9 @@
   align-items: flex-start;
 
   &_item {
-    width: 48%;
+    width: 49%;
     margin-bottom: 20px;
+    border-radius: 4px;
     > .ant-card-body {
       padding: 12px 12px 6px;
     }

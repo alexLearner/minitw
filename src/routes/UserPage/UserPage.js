@@ -4,11 +4,11 @@ import { withRouter } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Posts from "../../components/Posts/Posts";
-import "./User.css";
 import { getPosts } from "../../actions/posts";
 import Avatar from "../../components/Avatar";
+import "./UserPage.css";
 
-class User extends Component {
+class UserPage extends Component {
   componentDidMount() {
     const { isFetched, getPosts } = this.props;
 
@@ -55,7 +55,7 @@ class User extends Component {
   }
 }
 
-User.propTypes = {
+UserPage.propTypes = {
   normalizeData: PropTypes.object,
   posts: PropTypes.object,
   isFetched: PropTypes.bool,
@@ -71,4 +71,4 @@ export default withRouter(connect(
   dispatch => ({
     getPosts: bindActionCreators(getPosts, dispatch)
   })
-)(User));
+)(UserPage));

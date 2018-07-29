@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
 import Home from "./Home";
-import User from "./User";
+import UserPage from "./UserPage";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Modals from "../components/Modals";
@@ -20,7 +20,7 @@ const routes = [
   },
   {
     path: "/users/:id",
-    component: User
+    component: UserPage
   },
   // {
   //   path: "/",
