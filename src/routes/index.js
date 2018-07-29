@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import Home from "./Home";
 import User from "./User";
 import Header from "../components/Header";
+import Modals from "../components/Modals";
 import { ROOT } from "../config";
 import { getUsers } from "../actions/users";
 import "./Layout.css";
@@ -52,12 +53,14 @@ class RouterLayout extends Component {
         <div className="layout">
           <Header />
           <div className="container layout_content">
-              {
-                routes.map((route, i) =>
-                  <RouteWithSubRoutes key={i} {...route} />
-                )
-              }
+            {
+              routes.map((route, i) =>
+                <RouteWithSubRoutes key={i} {...route} />
+              )
+            }
           </div>
+
+          <Modals />
         </div>
       </Router>
     )
