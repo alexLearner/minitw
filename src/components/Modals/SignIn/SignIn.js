@@ -21,9 +21,11 @@ class SignIn extends Component {
 
     event.preventDefault();
 
-    login({ name: value});
-    close();
-    callback && callback();
+    if (value && value.trim()) {
+      login({ name: value });
+      close();
+      callback && callback();
+    }
   };
 
   render() {
@@ -50,7 +52,7 @@ class SignIn extends Component {
             className="comments_form_button"
             type="primary"
             htmlType="submit"
-            disabled={!value}
+            disabled={!(value.trim())}
           >
             Ok
           </Button>
@@ -62,11 +64,7 @@ class SignIn extends Component {
           >
             Close
           </Button>
-
-
         </div>
-
-
       </form>
     )
   }

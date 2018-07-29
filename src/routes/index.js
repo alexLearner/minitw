@@ -24,6 +24,10 @@ const routes = [
     exact: true,
     component: User
   },
+  // {
+  //   path: "/",
+  //   component: NotFound
+  // },
 ];
 
 const RouteWithSubRoutes = route => (
@@ -62,7 +66,6 @@ class RouterLayout extends Component {
                   <RouteWithSubRoutes key={i} {...route} />
                 )
               }
-              <Route component={ NotFound } />
             </Switch>
           </div>
 
