@@ -19,8 +19,6 @@ class SignIn extends Component {
       { callback } = body || {},
       { value } = this.state;
 
-    console.log("body", body)
-
     event.preventDefault();
 
     login({ name: value});
@@ -29,11 +27,13 @@ class SignIn extends Component {
   };
 
   render() {
-    const { value } = this.state;
+    const
+      { value } = this.state,
+      { close } = this.props;
 
     return (
       <form className="sign_in" onSubmit={this.submit}>
-        <h2>Login</h2>
+        <div className="sign_in_title">Login</div>
         <input
           type="text"
           name="name"
@@ -44,14 +44,27 @@ class SignIn extends Component {
           value={value}
         />
 
-        <Button
-          className="comments_form_button"
-          type="primary"
-          htmlType="submit"
-          disabled={!value}
-        >
-          Login
-        </Button>
+        <div className="sign_in_buttons">
+          <Button
+            className="comments_form_button"
+            type="primary"
+            htmlType="submit"
+            disabled={!value}
+          >
+            Ok
+          </Button>
+
+          <Button
+            className="comments_form_button"
+            type="danger"
+            onClick={close}
+          >
+            Close
+          </Button>
+
+
+        </div>
+
 
       </form>
     )
