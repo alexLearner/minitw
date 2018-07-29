@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { NavLink, Link } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { ROOT } from "../../config";
@@ -41,13 +42,17 @@ const Header = ({ open, isAuth, name, out }) => (
               </span>
             ]
         }
-
-
-
       </nav>
     </div>
   </header>
 );
+
+Header.propTypes = {
+  name: PropTypes.string,
+  isAuth: PropTypes.bool,
+  open: PropTypes.func.isRequired,
+  out: PropTypes.func.isRequired,
+};
 
 export default connect(
   state => ({
