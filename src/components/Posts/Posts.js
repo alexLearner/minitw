@@ -2,11 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "antd/lib/icon";
 import Post from "./Post";
-import "./Posts.css"
+import Preloader from "../Preloader";
 import { postType, userType } from "../../types";
+import "./Posts.css"
 
-const Posts = ({ posts, user }) => {
-  if (!(posts && posts.length)) {
+const Posts = ({ posts, user, isFetched }) => {
+  if (!isFetched) {
+    return <Preloader className="posts posts_empty" />
+  }
+
+  if (!(posts && posts.length && isFetched)) {
     return (
       <div className="posts posts_empty">
         <p>
@@ -33,6 +38,7 @@ const Posts = ({ posts, user }) => {
 
 Posts.defaultProps = {
   posts: [],
+  isFetched: PropTypes.bool,
 };
 
 Posts.propTypes = {

@@ -14,6 +14,7 @@ export default function user(state = initialState, action) {
     case c.USER_LOGIN: {
       return {
         isAuth: true,
+        id: (new Date()).getTime(), // mock id for PropTypes
         ...action.payload,
       }
     }

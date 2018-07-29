@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import Spin from "antd/lib/spin";
 import Users from "../../components/Users/Users";
+import Preloader from "../../components/Preloader";
 import { userType } from "../../types";
 
 class Home extends Component {
@@ -10,7 +10,7 @@ class Home extends Component {
     const { isFetched, data } = this.props;
 
     if (!isFetched) {
-      return <div> Loading <Spin size="large" /> </div>
+      return <Preloader/>;
     }
 
     return (

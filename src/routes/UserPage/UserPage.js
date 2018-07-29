@@ -22,6 +22,7 @@ class UserPage extends Component {
       {
         normalizeData,
         posts,
+        isFetched,
         match: { params: { id } },
       } = this.props,
       user = normalizeData && normalizeData[id],
@@ -49,7 +50,11 @@ class UserPage extends Component {
           </div>
         </div>
 
-        <Posts posts={userPosts} user={user} />
+        <Posts
+          posts={userPosts}
+          user={user}
+          isFetched={isFetched}
+        />
       </div>
     )
   }
