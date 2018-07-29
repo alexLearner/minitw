@@ -14,6 +14,20 @@ export const updatePostsInStorage = store => {
   };
 };
 
+export const updateUsersInStorage = store => {
+  let currentValue;
+
+  return () => {
+    let prevValue = currentValue;
+
+    currentValue = store.getState().users.data;
+
+    if (prevValue !== currentValue) {
+      localStore.set("users", currentValue)
+    }
+  };
+};
+
 export const updateUserInStorage = store => {
   let currentValue;
 

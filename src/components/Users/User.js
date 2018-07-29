@@ -12,7 +12,7 @@ const User = ({ id, avatar, name }) => (
     className="users_item"
   >
     <Card
-      cover={<Avatar image={avatar} />}
+      cover={<Avatar className="users_item_avatar" image={avatar} />}
       hoverable
     >
       <div className="users_item_name">{name}</div>

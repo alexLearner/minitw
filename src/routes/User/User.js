@@ -29,6 +29,7 @@ class User extends Component {
       {
         avatar,
         name,
+        bio,
       } = user || {};
 
     if (!user) {
@@ -44,6 +45,7 @@ class User extends Component {
 
           <div>
             <h2>{name}</h2>
+            <div dangerouslySetInnerHTML={{ __html: bio }} />
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import Icon from "antd/lib/icon";
 import User from "./User";
 import "./Users.css"
 
-const Users = ({ data, removeUser }) => {
+const Users = ({ data }) => {
   if (!(data && data.length)) {
     return (
       <div className="users users_empty">

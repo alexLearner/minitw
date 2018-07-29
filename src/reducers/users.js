@@ -1,16 +1,20 @@
 import * as c from "../constants";
+import localStore from "../modules/localStore";
 import { normalize, schema } from 'normalizr';
 
-const
-  initialState = {
-    isFetched: false,
-    data: null,
-  },
+const storageUsers = localStore.get("users"),
 
   userSchema = new schema.Entity('users'),
   userListSchema = [ userSchema ],
 
-  normalizeUsers = (data) => normalize(data, userListSchema).entities.users;
+  normalizeUsers = (data) => normalize(data, userListSchema).entities.users,
+
+  initialState = {
+    isFetched: !!storageUsers,
+    data: storageUsers,
+    normalizeData: storageUsers ? normalizeUsers(storageUsers) : null,
+  };
+
 
 export default function users(state = initialState, action) {
   switch (action.type) {

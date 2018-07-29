@@ -25,6 +25,7 @@ class CommentsForm extends Component {
 
     const fn = () => {
       pushComment(userId, postId, value);
+      this.setState({ value: "" });
       this.textarea.clear();
     };
 
@@ -36,7 +37,7 @@ class CommentsForm extends Component {
   };
 
   change = value => {
-    this.setState({ value });
+    this.setState({ value: value.trim() });
   };
 
   render() {

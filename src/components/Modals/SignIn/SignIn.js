@@ -41,6 +41,7 @@ class SignIn extends Component {
           placeholder="Your name"
           className="sign_in_input"
           autoFocus
+          maxLength="24"
           value={value}
         />
 

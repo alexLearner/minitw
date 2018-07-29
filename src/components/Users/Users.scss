@@ -24,6 +24,10 @@
 			min-width: 80px;
 			cursor: pointer;
 		}
+
+		&_avatar {
+			object-fit: cover;
+		}
 	}
 
 	&_empty {
