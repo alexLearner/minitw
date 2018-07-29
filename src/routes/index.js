@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
 import Home from "./Home";
 import User from "./User";
-import NotFound from "./NotFound";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Modals from "../components/Modals";
@@ -21,7 +20,6 @@ const routes = [
   },
   {
     path: "/users/:id",
-    exact: true,
     component: User
   },
   // {
@@ -60,13 +58,11 @@ class RouterLayout extends Component {
         <div className="layout">
           <Header />
           <div className="container layout_content">
-            <Switch>
-              {
-                routes.map((route, i) =>
-                  <RouteWithSubRoutes key={i} {...route} />
-                )
-              }
-            </Switch>
+            {
+              routes.map((route, i) =>
+                <RouteWithSubRoutes key={i} {...route} />
+              )
+            }
           </div>
 
           <Footer />
