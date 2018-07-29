@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import Posts from "../../components/Posts/Posts";
 import { getPosts } from "../../actions/posts";
+import Posts from "../../components/Posts/Posts";
 import Avatar from "../../components/Avatar";
 import "./UserPage.css";
 

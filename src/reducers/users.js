@@ -1,6 +1,6 @@
+import { normalize, schema } from 'normalizr';
 import * as c from "../constants";
 import localStore from "../modules/localStore";
-import { normalize, schema } from 'normalizr';
 
 const storageUsers = localStore.get("users"),
 

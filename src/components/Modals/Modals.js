@@ -22,7 +22,7 @@ class Modals extends Component {
         break;
 
       default:
-        block = <SignIn {...this.props} />;
+        block = <div />;
     }
 
     return block;
