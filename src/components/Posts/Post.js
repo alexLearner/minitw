@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Card from "antd/lib/card";
 import Comments from "../Comments";
 
-const Post = ({ created, content, comments, title }) => (
+const Post = ({ id, created, content, comments, title, userId }) => (
   <Card className="posts_item">
     <div className="posts_item_header">
       <div className="posts_item_title">{title}</div>
@@ -16,16 +16,21 @@ const Post = ({ created, content, comments, title }) => (
     />
 
     <div className="posts_item_comments">
-      <Comments comments={comments} />
+      <Comments
+        userId={userId}
+        postId={id}
+        comments={comments}
+      />
     </div>
-
   </Card>
-
 );
 
 Post.propTypes = {
-  first_name: PropTypes.string,
-  last_name: PropTypes.string,
+  created: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.string,
+  comments: PropTypes.array,
+  userId: PropTypes.number,
 };
 
 export default Post;

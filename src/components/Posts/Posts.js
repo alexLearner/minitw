@@ -4,7 +4,7 @@ import Icon from "antd/lib/icon";
 import Post from "./Post";
 import "./Posts.css"
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts, user }) => {
   if (!(posts && posts.length)) {
     return (
       <div className="posts posts_empty">
@@ -20,6 +20,7 @@ const Posts = ({ posts }) => {
       {
         posts.map(post => (
           <Post
+            userId={user.id}
             key={post.id}
             {...post}
           />
@@ -35,7 +36,7 @@ Posts.defaultProps = {
 
 Posts.propTypes = {
   posts: PropTypes.array,
-  user: PropTypes.object,
+  user: PropTypes.object.isRequired,
 };
 
 export default Posts;

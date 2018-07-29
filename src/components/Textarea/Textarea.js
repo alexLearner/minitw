@@ -10,12 +10,12 @@ class Textarea extends PureComponent {
 
     if (event.which === 13) {
       event.preventDefault();
-      onEnter();
+      onEnter(event);
     }
   };
 
   change = ({ target }) => {
-    const value = { target };
+    const { value } = target;
     this.setState({ value });
 
     this.props.onChange && this.props.onChange(value);

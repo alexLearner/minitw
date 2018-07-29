@@ -7,13 +7,13 @@ import { ROOT } from "../../config";
 
 const DEFAULT_AVATAR = "https://cdn.dribbble.com/users/264/screenshots/1035073/untitled-2.jpg";
 
-const User = ({ id, avatar, first_name, last_name }) => (
+const User = ({ id, avatar, name }) => (
   <Link to={`${ROOT}/users/${id}`} className="users_item">
     <Card
       cover={<img src={avatar || DEFAULT_AVATAR} alt="" />}
       hoverable
     >
-      <div className="users_item_name">{first_name} {last_name}</div>
+      <div className="users_item_name">{name}</div>
 
       <div className="users_item_buttons">
           <Button
@@ -29,8 +29,7 @@ const User = ({ id, avatar, first_name, last_name }) => (
 );
 
 User.propTypes = {
-  first_name: PropTypes.string,
-  last_name: PropTypes.string,
+  name: PropTypes.string,
 };
 
 export default User;

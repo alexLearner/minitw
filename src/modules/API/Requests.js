@@ -6,6 +6,8 @@ class RequestsClass extends API {
 
   getNews = () => this.get('/json/news.json');
 
+  getPosts = () => this.get('/json/posts.json');
+
 }
 
 const Requests = new RequestsClass();

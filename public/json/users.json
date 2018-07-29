@@ -1,7 +1,7 @@
 [
   {
     "id":1,
-    "first_name":"George",
+    "name":"George",
     "last_name":"Bluth",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg",
     "posts": [
@@ -14,7 +14,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -50,7 +50,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -68,7 +68,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -86,7 +86,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -99,7 +99,7 @@
   },
   {
     "id":2,
-    "first_name":"Janet",
+    "name":"Janet",
     "last_name":"Weaver",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg",
     "posts": [
@@ -112,7 +112,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -125,7 +125,7 @@
   },
   {
     "id":3,
-    "first_name":"Emma",
+    "name":"Emma",
     "last_name":"Wong",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg",
     "posts": [
@@ -138,7 +138,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -151,7 +151,7 @@
   },
   {
     "id":4,
-    "first_name":"Eve",
+    "name":"Eve",
     "last_name":"Holt",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg",
     "posts": [
@@ -164,7 +164,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -177,7 +177,7 @@
   },
   {
     "id":5,
-    "first_name":"Charles",
+    "name":"Charles",
     "last_name":"Morris",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg",
     "posts": [
@@ -190,7 +190,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -203,7 +203,7 @@
   },
   {
     "id":6,
-    "first_name":"Tracey",
+    "name":"Tracey",
     "last_name":"Ramos",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg",
     "posts": [
@@ -216,7 +216,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -229,7 +229,7 @@
   },
   {
     "id":7,
-    "first_name":"Michael",
+    "name":"Michael",
     "last_name":"Lawson",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
     "posts": [
@@ -242,7 +242,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -255,7 +255,7 @@
   },
   {
     "id":8,
-    "first_name":"Lindsay",
+    "name":"Lindsay",
     "last_name":"Ferguson",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
     "posts": [
@@ -268,7 +268,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -281,7 +281,7 @@
   },
   {
     "id":9,
-    "first_name":"Tobias",
+    "name":"Tobias",
     "last_name":"Funke",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
     "posts": [
@@ -294,7 +294,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -307,7 +307,7 @@
   },
   {
     "id":10,
-    "first_name":"Byron",
+    "name":"Byron",
     "last_name":"Fields",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
     "posts": [
@@ -320,7 +320,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -333,7 +333,7 @@
   },
   {
     "id":11,
-    "first_name":"George",
+    "name":"George",
     "last_name":"Edwards",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
     "posts": [
@@ -346,7 +346,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },
@@ -359,7 +359,7 @@
   },
   {
     "id":12,
-    "first_name":"Rachel",
+    "name":"Rachel",
     "last_name":"Howell",
     "avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
     "posts": [
@@ -372,7 +372,7 @@
             "id": 1,
             "user": {
               "id":1,
-              "first_name":"George",
+              "name":"George",
               "last_name":"Bluth",
               "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
             },

@@ -31,6 +31,18 @@
     }
   }
 
+  &_container {
+    max-height: 220px;
+    overflow: auto;
+    word-break: break-all;
+  }
+
+  &_empty {
+    font-weight: bold;
+    text-align: center;
+    padding: 6px;
+  }
+
   &_form {
     display: flex;
     align-items: center;

@@ -8,7 +8,9 @@ const
   },
 
   userSchema = new schema.Entity('users'),
-  userListSchema = [ userSchema ];
+  userListSchema = [ userSchema ],
+
+  normalizeUsers = (data) => normalize(data, userListSchema).entities.users;
 
 export default function users(state = initialState, action) {
   switch (action.type) {
@@ -17,7 +19,7 @@ export default function users(state = initialState, action) {
       return {
         isFetched: true,
         data: action.payload,
-        normalizeData: normalize(action.payload, userListSchema).entities.users
+        normalizeData: normalizeUsers(action.payload),
       }
     }
 

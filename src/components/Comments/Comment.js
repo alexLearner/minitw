@@ -12,7 +12,7 @@ const Comment = ({ user, content, created }) => (
       />
 
       <div className="comments_item_content">
-        <div className="comments_item_name">{user.first_name} {user.last_name}</div>
+        <div className="comments_item_name">{user.name}</div>
 
         { content }
       </div>
