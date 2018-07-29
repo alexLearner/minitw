@@ -3,12 +3,15 @@ import { ROOT } from "../../config";
 
 class API {
   fetch = (url, params) => {
-    return fetch(ROOT + url, {
-      ...params,
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-      },
-    })
+    return fetch(
+      ROOT + url,
+      {
+        ...params,
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+        },
+      }
+    )
   };
 
   get = (url, params = {}) => {
