@@ -17,20 +17,12 @@ const Comment = ({ user, content }) => (
         { content }
       </div>
     </div>
-
-    {/*<div className="comments_item_created">*/}
-      {/*{ (new Date(created)).toDateString() }*/}
-    {/*</div>*/}
   </div>
 );
 
 Comment.propTypes = {
   user: PropTypes.object,
   content: PropTypes.string,
-  // created: PropTypes.oneOfType([
-  //   PropTypes.string,
-  //   PropTypes.number,
-  // ]),
 };
 
 export default Comment;

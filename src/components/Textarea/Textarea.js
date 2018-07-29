@@ -8,7 +8,7 @@ class Textarea extends PureComponent {
   onKeyPress = event => {
     const { onEnter } = this.props;
 
-    if (event.which === 13) {
+    if (event.which === 13 && !event.shiftKey) {
       event.preventDefault();
       onEnter(event);
     }
