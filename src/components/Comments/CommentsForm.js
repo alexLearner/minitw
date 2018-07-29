@@ -71,8 +71,11 @@ class CommentsForm extends Component {
 }
 
 CommentsForm.propTypes = {
+  isAuth: PropTypes.bool,
   userId: PropTypes.number.isRequired,
   postId: PropTypes.number.isRequired,
+  pushComment: PropTypes.func.isRequired,
+  open: PropTypes.func.isRequired,
 };
 
 export default connect(

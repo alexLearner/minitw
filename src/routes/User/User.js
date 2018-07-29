@@ -58,6 +58,8 @@ class User extends Component {
 User.propTypes = {
   normalizeData: PropTypes.object,
   posts: PropTypes.object,
+  isFetched: PropTypes.bool,
+  getPosts: PropTypes.func.isRequired,
 };
 
 export default withRouter(connect(

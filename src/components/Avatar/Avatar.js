@@ -25,9 +25,8 @@ Avatar.propTypes = {
     "small",
   ]),
   theme: PropTypes.oneOf([
-    "circle"
+    "circle",
   ])
-
 };
 
 export default Avatar;

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Icon from "antd/lib/icon";
 import User from "./User";
 import "./Users.css"
+import {userType} from "../../types";
 
 const Users = ({ data }) => {
   if (!(data && data.length)) {
@@ -34,7 +35,9 @@ Users.defaultProps = {
 };
 
 Users.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.arrayOf(
+    PropTypes.shape(userType)
+  ),
 };
 
 export default Users;

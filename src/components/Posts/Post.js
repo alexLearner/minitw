@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Card from "antd/lib/card";
 import Comments from "../Comments";
+import { postType } from "../../types";
 
 const Post = ({ id, created, content, comments, title, userId }) => (
   <Card className="posts_item">
@@ -26,10 +27,7 @@ const Post = ({ id, created, content, comments, title, userId }) => (
 );
 
 Post.propTypes = {
-  created: PropTypes.string,
-  title: PropTypes.string,
-  content: PropTypes.string,
-  comments: PropTypes.array,
+  ...postType,
   userId: PropTypes.number,
 };
 

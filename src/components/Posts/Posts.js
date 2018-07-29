@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Icon from "antd/lib/icon";
 import Post from "./Post";
 import "./Posts.css"
+import { postType, userType } from "../../types";
 
 const Posts = ({ posts, user }) => {
   if (!(posts && posts.length)) {
@@ -35,8 +36,10 @@ Posts.defaultProps = {
 };
 
 Posts.propTypes = {
-  posts: PropTypes.array,
-  user: PropTypes.object.isRequired,
+  posts: PropTypes.arrayOf(
+    PropTypes.shape(postType)
+  ),
+  user: PropTypes.shape(userType).isRequired,
 };
 
 export default Posts;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from "prop-types";
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import SignIn from './SignIn';
@@ -6,7 +7,6 @@ import { close } from "../../actions/modals";
 import "./Modals.css";
 
 class Modals extends Component {
-
   handleClick = event => {
     if (event.target.contains(this.modal)) {
       this.props.close();
@@ -52,6 +52,13 @@ class Modals extends Component {
     );
   }
 }
+
+Modals.propTypes = {
+  name: PropTypes.string,
+  body: PropTypes.object,
+  isVisible: PropTypes.bool,
+  close: PropTypes.func.isRequired,
+};
 
 export default connect(
   state => ({

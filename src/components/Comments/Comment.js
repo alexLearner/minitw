@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Avatar from "../Avatar";
+import { userType } from "../../types";
 
 const Comment = ({ user, content }) => (
   <div className="comments_item">
@@ -13,7 +14,6 @@ const Comment = ({ user, content }) => (
 
       <div className="comments_item_content">
         <div className="comments_item_name">{user.name}</div>
-
         { content }
       </div>
     </div>
@@ -21,7 +21,7 @@ const Comment = ({ user, content }) => (
 );
 
 Comment.propTypes = {
-  user: PropTypes.object,
+  user: PropTypes.shape(userType).isRequired,
   content: PropTypes.string,
 };
 

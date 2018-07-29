@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Card from "antd/lib/card";
 import Button from "antd/lib/button";
 import { Link } from "react-router-dom";
 import { ROOT } from "../../config";
 import Avatar from "../Avatar";
+import { userType } from "../../types";
 
 const User = ({ id, avatar, name }) => (
   <Link
@@ -29,10 +29,6 @@ const User = ({ id, avatar, name }) => (
   </Link>
 );
 
-User.propTypes = {
-  id: PropTypes.number.isRequired,
-  avatar: PropTypes.string,
-  name: PropTypes.string.isRequired,
-};
+User.propTypes = userType;
 
 export default User;

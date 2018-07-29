@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import CommentsForm from "./CommentsForm";
 import Comment from "./Comment";
 import "./Comments.css";
+import { commentType } from "../../types";
 
 class Comments extends Component {
   componentDidMount() {
@@ -54,7 +55,9 @@ class Comments extends Component {
 }
 
 Comments.propTypes = {
-  comments: PropTypes.array,
+  comments: PropTypes.arrayOf(
+    PropTypes.shape(commentType)
+  ),
   userId: PropTypes.number.isRequired,
   postId: PropTypes.number.isRequired,
 };
