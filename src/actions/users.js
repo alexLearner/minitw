@@ -11,19 +11,3 @@ export const getUsers = () => dispatch => {
     .getUsers()
     .then(res => dispatch(setUsers(res)))
 };
-//
-// export const pushComment = (userId, content) =>
-//   (dispatch, getState) => {
-//     const
-//       { id, name, avatar } = getState().user,
-//       sender = { id, name, avatar };
-//
-//     return {
-//       type: c.USERS_PUSH_COMMENT,
-//       payload: {
-//         userId,
-//         content,
-//         sender,
-//       }
-//     }
-//   };

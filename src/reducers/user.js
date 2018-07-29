@@ -3,7 +3,6 @@ import * as c from "../constants";
 const
   initialState = {
     isAuth: true,
-
     name: "test",
   };
 
