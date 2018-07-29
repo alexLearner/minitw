@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import cx from 'classnames';
 import SignIn from './SignIn';
 import { close } from "../../actions/modals";
 import "./Modals.css";
@@ -19,11 +18,11 @@ class Modals extends Component {
 
     switch (name) {
       case "sign_in":
-        block = <SignIn />;
+        block = <SignIn {...this.props} />;
         break;
 
       default:
-        block = <SignIn />;
+        block = <SignIn {...this.props} />;
     }
 
     return block;
@@ -57,6 +56,7 @@ class Modals extends Component {
 export default connect(
   state => ({
     name: state.modals.name,
+    body: state.modals.body,
     isVisible: state.modals.isVisible,
   }),
   dispatch => ({

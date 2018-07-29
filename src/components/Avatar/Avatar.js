@@ -15,7 +15,7 @@ Avatar.defaultProps = {
 };
 
 Avatar.propTypes = {
-  image: PropTypes.string.isRequred,
+  image: PropTypes.string.isRequired,
   alt: PropTypes.string,
   className: PropTypes.string,
   size: PropTypes.oneOf([

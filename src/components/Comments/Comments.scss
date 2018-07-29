@@ -1,5 +1,5 @@
 .comments {
-  padding: 6px 0;
+  padding: 0;
 
   &_item {
     border-bottom: 1px solid #ccc;
@@ -7,6 +7,7 @@
 
     &:last-child {
       margin-bottom: 0;
+      border-bottom: 0;
     }
 
     &_body {
@@ -48,7 +49,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 6px 12px 0;
-    margin-top: 12px;
+    border-top: 1px solid #ccc;
 
     &_textarea {
       flex: 1;

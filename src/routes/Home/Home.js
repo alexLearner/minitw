@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Spin from "antd/lib/spin";
 import Users from "../../components/Users/Users";
-import { removeUser } from "../../actions/users";
 
 class Home extends Component {
   render() {
@@ -24,7 +23,6 @@ class Home extends Component {
 Home.propTypes = {
   fetched: PropTypes.bool,
   data: PropTypes.array,
-  removeUser: PropTypes.func.isRequired,
 };
 
 export default connect(

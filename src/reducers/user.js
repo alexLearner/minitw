@@ -2,8 +2,8 @@ import * as c from "../constants";
 
 const
   initialState = {
-    isAuth: true,
-    name: "test",
+    isAuth: false,
+    name: "",
   };
 
 export default function user(state = initialState, action) {

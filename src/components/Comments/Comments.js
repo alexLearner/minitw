@@ -5,13 +5,21 @@ import Comment from "./Comment";
 import "./Comments.css";
 
 class Comments extends Component {
+  componentDidMount() {
+    this.scrollBottom();
+  }
+
   componentDidUpdate({ comments }) {
     const oldComments = this.props.comments;
 
     if (oldComments && comments.length !== oldComments.length) {
-      this.container.scrollTop = 99999;
+      this.scrollBottom()
     }
   }
+
+  scrollBottom = () => {
+    this.container.scrollTop = 99999;
+  };
 
   render() {
     let { comments, postId, userId } = this.props;

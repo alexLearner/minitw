@@ -27,7 +27,10 @@ const Comment = ({ user, content, created }) => (
 Comment.propTypes = {
   user: PropTypes.object,
   content: PropTypes.string,
-  created: PropTypes.string,
+  created: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
 };
 
 export default Comment;

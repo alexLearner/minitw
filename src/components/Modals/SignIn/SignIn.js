@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Button from "antd/lib/button";
-import {bindActionCreators} from "redux";
-import {connect} from "react-redux";
-import {getPosts} from "../../../actions/posts";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { login } from "../../../actions/user";
 import "./SignIn.css";
 
 class SignIn extends Component {
@@ -14,9 +14,18 @@ class SignIn extends Component {
   };
 
   submit = event => {
+    const
+      { login, close, body } = this.props,
+      { callback } = body || {},
+      { value } = this.state;
+
+    console.log("body", body)
+
     event.preventDefault();
 
-
+    login({ name: value});
+    close();
+    callback && callback();
   };
 
   render() {
@@ -31,13 +40,14 @@ class SignIn extends Component {
           onChange={this.change}
           placeholder="Your name"
           className="sign_in_input"
+          autoFocus
           value={value}
         />
 
         <Button
           className="comments_form_button"
           type="primary"
-          key="submit"
+          htmlType="submit"
           disabled={!value}
         >
           Login
@@ -49,14 +59,14 @@ class SignIn extends Component {
 }
 
 SignIn.propTypes = {
-  comments: PropTypes.array,
-  userId: PropTypes.number.isRequired,
-  postId: PropTypes.number.isRequired,
+  login: PropTypes.func.isRequired,
+  close: PropTypes.func.isRequired,
+  callback: PropTypes.func,
 };
 
 export default connect(
   null,
   dispatch => ({
-    login: bindActionCreators(getPosts, dispatch)
+    login: bindActionCreators(login, dispatch),
   })
 )(SignIn);

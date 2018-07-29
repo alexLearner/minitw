@@ -22,7 +22,7 @@ class Textarea extends PureComponent {
   };
 
   clear = () => {
-    this.setValue(null);
+    this.setState({ value: "" });
   };
 
   focus = () => {

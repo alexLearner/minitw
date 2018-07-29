@@ -53,7 +53,6 @@ class User extends Component {
 }
 
 User.propTypes = {
-  id: PropTypes.number.isRequired,
   normalizeData: PropTypes.object,
   posts: PropTypes.object,
 };

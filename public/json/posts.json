@@ -17,20 +17,35 @@
           "content": "ha ha!"
         },
         {
-          "id": 1,
-          "user": 1,
+          "id": 2,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "text"
         },
         {
-          "id": 1,
-          "user": 3,
+          "id": 3,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "ha ha!"
         },
         {
-          "id": 1,
-          "user": 3,
+          "id": 4,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "ha ha!"
         }
@@ -109,20 +124,35 @@
           "content": "ha ha!"
         },
         {
-          "id": 1,
-          "user": 1,
+          "id": 21,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "text"
         },
         {
-          "id": 1,
-          "user": 3,
+          "id": 13,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "ha ha!"
         },
         {
-          "id": 1,
-          "user": 3,
+          "id": 4,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "ha ha!"
         }
@@ -201,20 +231,35 @@
           "content": "ha ha!"
         },
         {
-          "id": 1,
-          "user": 1,
+          "id": 2,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "text"
         },
         {
-          "id": 1,
-          "user": 3,
+          "id": 3,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "ha ha!"
         },
         {
-          "id": 1,
-          "user": 3,
+          "id": 4,
+          "user": {
+            "id":1,
+            "name":"George",
+            "last_name":"Bluth",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+          },
           "created": 1,
           "content": "ha ha!"
         }

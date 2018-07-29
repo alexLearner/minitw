@@ -1,8 +1,11 @@
 import * as c from "../constants";
 
-export const open = payload => ({
+export const open = ( name, body ) => ({
   type: c.MODALS_OPEN,
-  payload
+  payload: {
+    name,
+    body,
+  }
 });
 
 export const close = payload => ({

@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import Button from "antd/lib/button";
 import Textarea from "../Textarea";
 import { pushComment } from "../../actions/posts";
+import { open } from "../../actions/modals";
 
 class CommentsForm extends Component {
   state = { value: "" };
@@ -12,14 +13,25 @@ class CommentsForm extends Component {
   submit = event => {
     const
       { value } = this.state,
-      { userId, pushComment, postId, isAuth } = this.props;
+      {
+        userId,
+        pushComment,
+        postId,
+        isAuth,
+        open,
+      } = this.props;
 
     event.preventDefault();
 
+    const fn = () => {
+      pushComment(userId, postId, value);
+      this.textarea.clear();
+    };
+
     if (isAuth) {
-      pushComment(userId, postId, value)
+      fn();
     } else {
-      alert("AUTH")
+      open("sign_in", { callback: fn })
     }
   };
 
@@ -41,12 +53,13 @@ class CommentsForm extends Component {
           placeholder="Write comment"
           className="comments_form_textarea"
           onEnter={this.submit}
+          ref={elem => this.textarea = elem}
         />
 
         <Button
           className="comments_form_button"
           type="primary"
-          key="submit"
+          htmlType="submit"
           disabled={!value}
         >
           Comment
@@ -67,5 +80,6 @@ export default connect(
   }),
   dispatch => ({
     pushComment: bindActionCreators(pushComment, dispatch),
+    open: bindActionCreators(open, dispatch),
   })
 )(CommentsForm);
